@@ -128,15 +128,9 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">LCL BC 2.3 Out</h6>
             <a class="collapse-item" href="lcl23.html">LCL Out BC 2.3</a>
-            <!-- <a class="collapse-item" href="404.html">Proses On Demand</a>
-            <a class="collapse-item" href="404.html">Input Manual</a>
-            <a class="collapse-item" href="404.html">Pengeluaran</a> -->
             <div class="collapse-divider"></div>
             <h6 class="collapse-header">LCL BC 2.0 Out</h6>
             <a class="collapse-item" href="lcl20.html">LCL Out BC 2.0</a>
-            <!-- <a class="collapse-item" href="404.html">Proses On Demand</a>
-            <a class="collapse-item" href="404.html">Input Manual</a>
-            <a class="collapse-item" href="404.html">Pengeluaran</a> -->
           </div>
         </div>
       </li>
@@ -195,20 +189,6 @@
           </div>
         </div>
       </li>
-      <!-- Nav Item - Charts -->
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
-      </li> -->
-
-      <!-- Nav Item - Tables -->
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
-      </li> -->
-
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
@@ -233,18 +213,6 @@
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
-
-          <!-- Topbar Search -->
-          <!-- <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
-            </div>
-          </form> -->
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -320,57 +288,89 @@
                   <img src="img/fclin.png" width="100%" height="100%">
                 </div>
                 <div class="card-body">
-                  <!-- <div class="dropdown no-arrow mb-4">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Penjelasan Rinci
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
-                      <a class="dropdown-item" href="#">Langkah Pertama</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div> -->
-                  <!-- Add the <code>.no-arrow</code> class alongside the <code>.dropdown</code> -->
-                </div>
-              </div>
-        <!-- /.container-fluid -->
-      </div>
-      <div class="card shadow mb-4">
-        <div class="card-header py-3">
-          <h6 class="m-0 font-weight-bold text-primary">Proses IN FCL</h6>
-        </div>
-        <div class="card-body">
-        <ul>
-          <li> <strong>Proses IN FCL</strong>
-          <ol>
-            <li style="padding-top: 10px;">Masuk ke Menu TPS Online dan Pilih Menu PLP untuk memeriksa data yang Tertarik oleh Sistem</li>
-            <img src="img/plp.png" style="width: 50%; height: 25%; padding-top: 10px;">
-            <li style="padding-top: 10px;">Pilih salah satu No Container untuk merubah Statusnya dari Draft ke Active</li>
-            <!-- <img src="img/" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-            <li style="padding-top: 10px;"> Setelah Status menjadi Active petugas harus menyiapkan Kartu, List Container sesuai Partai dan Stiker BC yang kemudian akan dibawa oleh
-              Petugas menuju Lini 1 </li>
-            <li style="padding-top: 10px;"> Proses Dipatch dan Input No. Polisi Truck, No Eseal, dan Bruto Container pada Menu Arrived</li>
-            <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-            <li style="padding-top: 10px;"> Setelah sampai, akan sopir tap kartu  </li>
-            <li style="padding-top: 10px;"> Buka menu Arrived untuk mengambil foto Segel Pelayaran menggunakan HP</li>
-            <img src="img/arrived.png" style="width: 50%; height: 25%; padding-top: 10px;">
-            <li>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Penjelasan Flowchart FCL IN</h6>
+            </div>
+            <div class="card-body">
+              <ol>
+                <li style="padding-top: 10px;">Petugas melakukan Request Pengajuan ke Terminal</li>
+                <li style="padding-top: 10px;">selanjutnya adalah membuat surat Pengajuan </li>
+                  <li style="padding-top: 10px;">Setelah mendapatkan persetujuan dari Terminal, kemudian Sistem akan menarik Respon PLP. Jika semua data tertarik maka Status akan berubah menjadi <b>DRAFT</b> Jika tidak tertarik secara Otomatis maka Petugas IT akan melakukan Input Manual</li>
+                  <li style="padding-top: 10px;">Setelah Petugas Manifest selesai input data maka Petugas Operasional akan mencetak WO Release yang kemudian di serahkan kepada Kerani Lapangan untuk melakukan perintah muat.
+                  </li>
+                  <li style="padding-top: 10px;">Setelah status di Sistem menjadi DRAFT, maka petugas manifest harus mengubah nya menjadi <b>ACTIVE</b>
+                  </li>
+                  <li style="padding-top: 10px;"> Langkah selanjutnya adalah menyiapkan kartu, List container sesuai dengan partai dan Stiker BC (ESEAL) yang kemudian akan di berikan kepada Petugas Over Bringen untuk di bawa Ke Terminal Lini 1</li>
+                  <li style="padding-top: 10px;"> Sesampainya di Terminal maka petugas akan melakukan proses (DISPACHE) Eseal, Input No Polisi dan Input Bruto, setelah Selesai Status di Sistem akan berubah menjadi <b>INCOMING</b> </li>
+                  <li style="padding-top: 10px;"> Status <b>INCOMING</b> menandakan bahwa Container sedang menuju TPS yang di tuju </li>
+                  <li style="padding-top: 10px;"> Setelah sampai di TPS maka supir melakukan Tap Kartu/ Scan Barcode. Jika berhasil maka akan auto foto CCTVs dan status di Sistem akan berubah menjadi <b>ARRIVED</b> (COARRICODECO IN) </li>
+                  <li style="padding-top: 10px;"> Security akan Stand By di menu <b> ARRIVED</b> Kemudian klik No Container lalu mengambil Foto Segel Pelayaran dan Tampak belakang menggunakan HP </li>
+                  <li style="padding-top: 10px;"> Apabila foto sudah di anggap jelas maka selanjutnya adalah Alokasi Blok</li>
+                  <li style="padding-top: 10px;"> Selanjutnya kerani Lapangan harus meng-input lokasi blok kedalam Sistem, setelah di simpan maka status di Sistem akan berubah menjadi <b> STORED</b></li>
+            </ol>
+            </div>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Proses IN FCL</h6>
+            </div>
+            <div class="card-body">
+            <ul>
+              <li> <strong>Proses IN FCL</strong>
+              <ol>
+                <li style="padding-top: 10px;">Masuk ke Menu TPS Online dan Pilih Menu PLP untuk memeriksa data yang Tertarik oleh Sistem</li>
+                <img src="img/plp.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                <li style="padding-top: 10px;">Pilih salah satu No Container untuk merubah Statusnya dari Draft ke Active</li>
+                <!-- <img src="img/" style="width: 50%; height: 25%; padding-top: 10px;"> -->
+                <li style="padding-top: 10px;"> Setelah Status menjadi Active petugas harus menyiapkan Kartu, List Container sesuai Partai dan Stiker BC yang kemudian akan dibawa oleh
+                  Petugas menuju Lini 1 </li>
+                <li style="padding-top: 10px;"> Proses Dipatch dan Input No. Polisi Truck, No Eseal, dan Bruto Container pada Menu Arrived</li>
+                  <ul>
+                    <li style="padding-top: 10px;"> Buka Menu Incoming </li>
+                    <img src="img/tambah/incoming.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                    <li style="padding-top: 10px;"> Input No Eseal, Bruto dan No Polisi kemudian Save </li>
+                    <img src="img/tambah/incoming2.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                  </ul>
+                <!-- <ul>
+                  <li style="padding-top: 10px;"> Pilih No Eseal</li>
+                  <img src="img/tambah/1.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                  <li style="padding-top: 10px;"> Input No Polisi Truck pengangkut</li>
+                  <img src="img/tambah/2.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                  <li style="padding-top: 20px;"> Pilih dari Mana TPS Asal dan TPS Tujuan  </i></li>
+                  <img src="img/tambah/4.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                  <li style="padding-top: 20px;"> Isi Rute dan Keterangan Container ( DG / DRY )  </i></li>
+                  <img src="img/tambah/5.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                  <li style="padding-top: 20px;"> Untuk mendapatkan Pemberitahuan tentang Proses Dispache maka isi kolom Telegram </i></li>
+                  <img src="img/tambah/6.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                  </ul> -->
+                <li style="padding-top: 10px;"> Setelah sampai, akan sopir tap kartu  </li>
+                <li style="padding-top: 10px;"> Untuk mengambil foto Segel Pelayaran dan Tampak belakang Contaimer menggunakan HP</li>
+                  <ul>
+                      <li style="padding-top: 10px;"> Buka menu Arrived</li>
+                      <img src="img/arrived.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                      <li style="padding-top: 10px;"> Pilih Salah Satu Container</li>
+                      <img src="img/arived1.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                      <li style="padding-top: 10px;"> Tap Gear lalu Pilih Photos</li>
+                      <img src="img/photo1.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                      <li style="padding-top: 20px;"> Tap Gear lalu Pilih Photos lagi</li>
+                      <img src="img/photo2.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                  </ul>
+              <li style="padding-top: 10px;"> Setelah Upload berhasil kemudian Petugas akan melakukan Alokasi Blok</li>
               <ul>
-             <li style="padding-top: 10px;"> Pilih Salah Satu Container</li>
-             <img src="img/arived1.png" style="width: 50%; height: 25%; padding-top: 10px;">
-             <li style="padding-top: 10px;"> Tap Gear lalu Pilih Photos</li>
-             <img src="img/photo1.png" style="width: 50%; height: 25%; padding-top: 10px;">
-             <li style="padding-top: 20px;"> Tap Gear lalu Pilih Photos lagi</li>
-             <img src="img/photo2.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                <li style="padding-top: 10px;"> Buka Menu Arrived </li>
+                <img src="img/tambah/inputarea1.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                <li style="padding-top: 10px;"> Pilih Container yang akan akan di alokasikan bloknya </li>
+                <img src="img/tambah/inputarea2.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                <li style="padding-top: 10px;"> Pilih nomor Blok kemudian Save </li>
+                <img src="img/tambah/inputarea3.png" style="width: 50%; height: 25%; padding-top: 10px;">
+              </ul>
+              <li style="padding-top: 10px;"> Setelah Alokasi Blok kemudian Kerani Lapangan akan Input Lokasi dan Status berubah menjadi Stored</li>
+              <!-- <img src="img/arrived.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
             </ul>
-          </li>
-          <li style="padding-top: 10px;"> Setelah Upload berhasil kemudian Petugas akan melakukan Alokasi Blok</li>
-          <!-- <img src="img/arrived.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-          <li style="padding-top: 10px;"> Setelah Alokasi Blok kemudian Kerani Lapangan akan Input Lokasi dan Status berubah menjadi Stored</li>
-          <!-- <img src="img/arrived.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-        </ul>
-        </div>
-      </div>
+            </div>
+          </div>
 
       <!-- End of Main Content -->
 

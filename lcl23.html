@@ -121,15 +121,9 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">LCL BC 2.3 Out</h6>
             <a class="collapse-item" href="lcl23.html">LCL Out BC 2.3</a>
-            <!-- <a class="collapse-item" href="404.html">Proses On Demand</a>
-            <a class="collapse-item" href="404.html">Input Manual</a>
-            <a class="collapse-item" href="404.html">Pengeluaran</a> -->
             <div class="collapse-divider"></div>
             <h6 class="collapse-header">LCL BC 2.0 Out</h6>
             <a class="collapse-item" href="lcl20.html">LCL Out BC 2.0</a>
-            <!-- <a class="collapse-item" href="404.html">Proses On Demand</a>
-            <a class="collapse-item" href="404.html">Input Manual</a>
-            <a class="collapse-item" href="404.html">Pengeluaran</a> -->
           </div>
         </div>
       </li>
@@ -189,20 +183,6 @@
         </div>
       </li>
 
-      <!-- Nav Item - Charts -->
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
-      </li> -->
-
-      <!-- Nav Item - Tables -->
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
-      </li> -->
-
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
@@ -227,18 +207,6 @@
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
-
-          <!-- Topbar Search -->
-          <!-- <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
-            </div>
-          </form> -->
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -314,44 +282,53 @@
                   <img src="img/lcl23.png" width="100%" height="100%">
                 </div>
                 <div class="card-body">
-                  <!-- <div class="dropdown no-arrow mb-4">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Penjelasan Rinci
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
-                      <a class="dropdown-item" href="#">Langkah Pertama</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div> -->
-                  <!-- Add the <code>.no-arrow</code> class alongside the <code>.dropdown</code> -->
+              </div>
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Penjelasan Flowchart LCL OUT SELAIN BC 2.0</h6>
+                </div>
+                <div class="card-body">
+                  <ol>
+                    <li style="padding-top: 10px;">Auto Tarik Data BC 2-3 jika data diterima maka status akan berubah menjadi ( HOLD ) yang kemudian berubah menjadi ( STORED )
+                    </li>
+                    <li style="padding-top: 10px;">Jika tidak memperoleh data maka Customer Service akan melakukan ON DEMAND, jika saat ,melakukan ON DEMAND data tidak tertarik juga 
+                      maka Customer Service akan menginput secara manual </li>
+                      <li style="padding-top: 10px;">Setelah itu Customer Service akan memeriksa Data Release P2 & PPC3 dan PPC2, apabila semuanya
+                        sudah RELEASE maka Petugas Manifest akan mengubah status di Sistem menjadi SET  OUTGOING setelah itu input Nopol, Tanggal  Keluar & Nomor dan Nama Pengurus serta Estimasi Tanggal Keluar</li>
+                      <li style="padding-top: 10px;">Langkah selanjutnya adalah cek data apakah sudah released semua atau belum, jika belum maka koordinasi dengan P2 dan PPC3 untuk meminta Release
+                      </li>
+                      <li style="padding-top: 10px;">Jika Release maka Petugas Operasional akan mencetak WO Release yang kemudian di berikan kepada Kerani Lapangan untuk melakukan perintah muat
+                      </li>
+                      <li style="padding-top: 10px;"> Selanjutnya Petugas Operasional melakukan Input Nopol , Tgl Keluar  & Nomor dan Nama Pengurus, status akan berubah menjadi ( SET OUTGOING )g</li>
+                      <li style="padding-top: 10px;"> Setelah foto diambil dan di upload ke Sistem maka EMKL meminta Released ke BC  </li>
+                      <li style="padding-top: 10px;"> Langkah selanjutnya adalah EMKL meminta Cap dan tanda tangan basah kepada petugas BC  </li>
+                      <li style="padding-top: 10px;"> Setelah semua surat lengkap maka Supir akan Tap Kartu di AUTO GATE dan status berubah menjadi ( OUT ) </li>
+                </ol>
                 </div>
               </div>
-        <!-- /.container-fluid -->
-      </div>
-      <div class="card shadow mb-4">
-        <div class="card-header py-3">
-          <h6 class="m-0 font-weight-bold text-primary">Proses On Demand dan Input Manual</h6>
-        </div>
-        <div class="card-body">
-        <ul>
-          <li> <strong>Proses On Demand</strong>
-          <ol>
-            <li style="padding-top: 10px;">Cara Melakukan Proses On Demand apabila data tidak otomatis tertarik mengisi No. Container untuk menarik data lainnya dari TPS Online</li>
-            <!-- <img src="img/flatfile.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-            <li style="padding-top: 10px;">Setelah Data di dapatkan maka petugas status akan berubah menjadi<strong> HOLD</strong> </li>
-            <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-        </ol></li>
-        <li style="padding-top: 10px;"> <strong>Proses Input Manual</strong>
-          <ol>
-            <li style="padding-top: 10px;">Petugas memeriksa Verifikasi Dokumen BC 23, kemudian membawa Dokumen ke BC Gate untuk diperiksa</li>
-            <!-- <img src="img/flatfile.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-            <li style="padding-top: 10px;">Setelah mendapat tanda tangan BC pada Dokumen, maka petugas akan input Dokumen yang sudah benar tadi</li>
-            <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-        </ol></li>
-      </ul>
-        </div>
-      </div>
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Proses On Demand dan Input Manual</h6>
+                </div>
+                <div class="card-body">
+                <ul>
+                  <li> <strong>Proses On Demand</strong>
+                  <ol>
+                    <li style="padding-top: 10px;">Cara Melakukan Proses On Demand apabila data tidak otomatis tertarik mengisi No. Container untuk menarik data lainnya dari TPS Online</li>
+                    <!-- <img src="img/flatfile.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
+                    <li style="padding-top: 10px;">Setelah Data di dapatkan maka petugas status akan berubah menjadi<strong> HOLD</strong> </li>
+                    <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
+                </ol></li>
+                <li style="padding-top: 10px;"> <strong>Proses Input Manual</strong>
+                  <ol>
+                    <li style="padding-top: 10px;">Petugas memeriksa Verifikasi Dokumen BC 23, kemudian membawa Dokumen ke BC Gate untuk diperiksa</li>
+                    <!-- <img src="img/flatfile.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
+                    <li style="padding-top: 10px;">Setelah mendapat tanda tangan BC pada Dokumen, maka petugas akan input Dokumen yang sudah benar tadi</li>
+                    <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
+                </ol></li>
+              </ul>
+                </div>
+              </div>
       <div class="card shadow mb-4">
         <div class="card-header py-3">
           <h6 class="m-0 font-weight-bold text-primary">Proses Set Outgoing</h6>
