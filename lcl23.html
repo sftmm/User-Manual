@@ -31,10 +31,9 @@
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <!-- <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
-        </div> -->
-        <div class="sidebar-brand-text mx-3">User Manual <sup>cWMS</sup></div>
+        <div class="sidebar-brand-text mx-3">
+          <!-- User Manual cWMS -->
+          <img src="img/logo.png" width="60px;" height="60px;"></div>
       </a>
 
       <!-- Divider -->
@@ -168,7 +167,7 @@
             <div class="collapse-divider"></div>
             <h6 class="collapse-header">SYSTEM DOWN LCL</h6>
             <a class="collapse-item" href="">LCL In</a>
-            <a class="collapse-item" href="blank.html">LCL Out</a>
+            <a class="collapse-item" href="sopdownout.html">LCL Out</a>
           </div>
         </div>
       </li>
@@ -329,65 +328,59 @@
               </div>
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Proses On Demand dan Input Manual</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Proses Set Outgoing</h6>
                 </div>
                 <div class="card-body">
                 <ul>
-                  <li> <strong>Proses On Demand</strong>
+                  <li> <strong>Memeriksa Data P2 dan PPC3 Release</strong>
                   <ol>
-                    <li style="padding-top: 10px;">Cara Melakukan Proses On Demand apabila data tidak otomatis tertarik mengisi No. Container untuk menarik data lainnya dari TPS Online</li>
-                    <!-- <img src="img/flatfile.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-                    <li style="padding-top: 10px;">Setelah Data di dapatkan maka petugas status akan berubah menjadi<strong> HOLD</strong> </li>
-                    <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
+                    <li style="padding-top: 10px;">Petugas memeriksa data P2 dan PPC3 sudah Release, maka bisa langsung di <strong>SET OUTGOING</strong> </li>
+                    <img src="img/p2ppc3.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                    <img src="img/setoutgoing.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                    <li style="padding-top: 10px;">Apabila PPC2 terkena HOLD maka petugas akan berkoordinasi dengan Petugas PPC2 untuk meminta Release</li>
+                    <ul>
+                      <li style="padding-top: 10px;"> Buka Menu Outgoing di Menu PPC2</li>
+                       <img src="img/tambah/hold1.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                       <li style="padding-top: 10px;"> Kemudian Pilih salah satu Container yang akan Keluar Lalu tekan Released </li>
+                       <img src="img/tambah/hold2.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                    </ul>
+                    <li style="padding-top: 10px;">Set Outgoing </li>
+                    <ul>
+                      <li style="padding-top: 10px;"> Buka Menu Stored </li>
+                       <img src="img/tambah/setoutgoing1.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                       <li style="padding-top: 10px;"> Kemudian Pilih salah satu Container yang akan Keluar Lalu Tap Gear dan Pilih <b>Set Outgoing</b> </li>
+                       <img src="img/tambah/setoutgoing2.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                       <li style="padding-top: 10px;"> Isi Nomor Polisi Truck dan Estimasi Tanggal Keluar Container kemudian pilih Save </li>
+                       <img src="img/tambah/setoutgoing3.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                    </ul>
                 </ol></li>
-                <li style="padding-top: 10px;"> <strong>Proses Input Manual</strong>
+                <li style="padding-top: 10px;"> <strong>Proses Outgoing</strong>
                   <ol>
                     <li style="padding-top: 10px;">Petugas memeriksa Verifikasi Dokumen BC 23, kemudian membawa Dokumen ke BC Gate untuk diperiksa</li>
                     <!-- <img src="img/flatfile.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
                     <li style="padding-top: 10px;">Setelah mendapat tanda tangan BC pada Dokumen, maka petugas akan input Dokumen yang sudah benar tadi</li>
                     <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
+                    <li style="padding-top: 10px;"> Setelah Informasi sudah di Input semua maka Petugas harus mencetak WO Relase yang kemudian di serahkan kepada Kerani Lapangan untuk melakukan Perintah Muat</li>
+                    <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
+                    <li style="padding-top: 10px;">Petugas Operasional harus mengambil foto Segel Pelayaran, Segel BC, dan Foto Nomor Container</li>
+                    <ul>
+                      <li style="padding-top: 10px;"> Buka Menu Outgoing </li>
+                       <img src="img/hasilcarihbl.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                       <li style="padding-top: 10px;"> Kemudian Pilih salah satu Container yang akan Keluar Lalu Tap Gear dan Pilih foto yang akan diambil </li>
+                       <img src="img/tambah/outgoing3.png" style="width: 50%; height: 25%; padding-top: 10px;">
+                    </ul>
+                    <li style="padding-top: 10px;">Setelah mendapatkan Release dari PPC2 maka Petugas Surat Jalan akan membuat Surat Jalan yang akan di serahkan ke EMKL untuk selanjutnya EMKL meminta Tanda Tangan dan Stempel Basah ke BC Gate</li>
+                    <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
+                    <li style="padding-top: 10px;">Surat di serahkan kepada Supir, apabila Jadi keluar pada tanggal yang di input pertama maka Supir akan Tap Kartu dan Status akan berubah menjadi Out</li>
+                    <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
+                    <li style="padding-top: 10px;">Jika Mobil tidak jadi keluar pada tanggal Estimasi maka Petugas akan melakukan SET OUTGOING lagi dan akan memasukan Estimasi tanggal baru</li>
+                    <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
+                    <li style="padding-top: 10px;">Jika Kartu masih Valid maka Supir bisa Tap kartu dan Status akan berubah menjadi OUT, apabila tidak valid maka Petugas harus menyiapkan Kartu Baru</li>
+                    <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
                 </ol></li>
               </ul>
                 </div>
               </div>
-      <div class="card shadow mb-4">
-        <div class="card-header py-3">
-          <h6 class="m-0 font-weight-bold text-primary">Proses Set Outgoing</h6>
-        </div>
-        <div class="card-body">
-        <ul>
-          <li> <strong>Memeriksa Data P2 dan PPC3 Release</strong>
-          <ol>
-            <li style="padding-top: 10px;">Petugas memeriksa data P2 dan PPC3 sudah Release, maka bisa langsung di <strong>SET OUTGOING</strong> </li>
-            <img src="img/p2ppc3.png" style="width: 50%; height: 25%; padding-top: 10px;">
-            <img src="img/setoutgoing.png" style="width: 50%; height: 25%; padding-top: 10px;">
-            <li style="padding-top: 10px;">Apabila P2 terkena HOLD maka petugas akan berkoordinasi dengan Petugas P2 untuk meminta Release</li>
-            <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-            <li style="padding-top: 10px;">Setelah di Set Outgoing maka selanjutnya adalah Input Informasi yang diperlukan </li>
-            <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-        </ol></li>
-        <li style="padding-top: 10px;"> <strong>Proses Outgoing</strong>
-          <ol>
-            <li style="padding-top: 10px;">Petugas memeriksa Verifikasi Dokumen BC 23, kemudian membawa Dokumen ke BC Gate untuk diperiksa</li>
-            <!-- <img src="img/flatfile.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-            <li style="padding-top: 10px;">Setelah mendapat tanda tangan BC pada Dokumen, maka petugas akan input Dokumen yang sudah benar tadi</li>
-            <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-            <li style="padding-top: 10px;"> Setelah Informasi sudah di Input semua maka Petugas harus mencetak WO Relase yang kemudian di serahkan kepada Kerani Lapangan untuk melakukan Perintah Muat</li>
-            <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-            <li style="padding-top: 10px;">Sebelum meminta Release kepada PPC2, petugas Operasional harus mengambil foto Segel Pelayaran, Segel BC, dan Foto Nomor Container</li>
-            <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-            <li style="padding-top: 10px;">Setelah mendapatkan Release dari PPC2 maka Petugas Surat Jalan akan membuat Surat Jalan yang akan di serahkan ke EMKL untuk selanjutnya EMKL meminta Tanda Tangan dan Stempel Basah ke BC Gate</li>
-            <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-            <li style="padding-top: 10px;">Surat di serahkan kepada Supir, apabila Jadi keluar pada tanggal yang di input pertama maka Supir akan Tap Kartu dan Status akan berubah menjadi Out</li>
-            <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-            <li style="padding-top: 10px;">Jika Mobil tidak jadi keluar pada tanggal Estimasi maka Petugas akan melakukan SET OUTGOING lagi dan akan memasukan Estimasi tanggal baru</li>
-            <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-            <li style="padding-top: 10px;">Jika Kartu masih Valid maka Supir bisa Tap kartu dan Status akan berubah menjadi OUT, apabila tidak valid maka Petugas harus menyiapkan Kartu Baru</li>
-            <!-- <img src="img/flatfile2.png" style="width: 50%; height: 25%; padding-top: 10px;"> -->
-        </ol></li>
-      </ul>
-        </div>
-      </div>
       <!-- End of Main Content -->
 
       <!-- Footer -->
