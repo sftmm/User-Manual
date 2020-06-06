@@ -351,9 +351,11 @@
                         dokumen yang dibawa oleh EMKL, apabila data dianggap benar maka Customer Servie akan melakukan input data secara manual, apabila terdapat data yang belum benar maka 
                         Customer Service meminta EMKL untuk VERIFIKASI dokumen ke BC Gate, setelah data sudah diverifikasi maka Customer Service akan 
                         Input Data Secara Manual dan Status di Sistem akan berubah menjadi RELEASE </li>
-                        <li style="padding-top: 10px;">Setelah itu Customer Service akan memeriksa Data Release P2 & PPC3 dan PPC2, apabila semuanya sudah RELEASE maka Petugas Manifest akan mengubah status di Sistem menjadi 
+                        <li style="padding-top: 10px;">Setelah itu Customer Service akan memeriksa Data Release P2 & PPC3 dan PPC2 </li>
+                        <li style="padding-top: 10px;">Kasir akan mengubah status di Sistem menjadi 
                           SET  OUTGOING setelah itu input Nopol, Tanggal Keluar & Nomor dan Nama Pengurus</li>
-                        <li style="padding-top: 10px;">Setelah Petugas Manifest selesai input data maka Petugas Operasional akan mencetak WO Release yang kemudian di serahkan kepada Kerani Lapangan untuk melakukan perintah muat.
+                          <li style="padding-top: 10px;">Setelah Status berubah menjadi Set Outgoing, kasir harus mengubah Status pembayaran menjadi Paid pada menu Billing di Menu WMS</li>
+                        <li style="padding-top: 10px;">Setelah selesai maka Petugas Operasional akan mencetak WO Release yang kemudian di serahkan kepada Kerani Lapangan untuk melakukan perintah muat.
                         </li>
                         <li style="padding-top: 10px;"> Langkah selanjutnya adalah mengambil foto Segel Pelayaran, Segel BC, No Container </li>
                         <li style="padding-top: 10px;"> Kemudian Petugas Surat Jalan membuat Surat Jalan untuk diserahkan ke EMKL yang selanjutnya EMKL akan meminta Tanda Tangan BC dan Stempel Basah. </li>
@@ -433,6 +435,28 @@
                         <img src="img/tambah/billingalertsetopaid.png" style="width: 40%; height: 20%; padding-top: 10px;">
                         <li style="padding-top: 10px;">Apabila sudah berhasil maka akan muncul Notifikasi dibagian kanan bawah dan secara otomatis House BL yang sudah berubah status menjadi Paid akan berpindah ke Menu Billing History </li>
                         <img src="img/tambah/billingnotificationpaid.png" style="width: 40%; height: 20%; padding-top: 10px;">
+
+                    </ol>
+                  </ul>
+              </div>
+            </div>
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Proses Set To Cancel</h6>
+              </div>
+              <div class="card-body">
+                    <ul>
+                        <li style="padding-top: 10px;">Jika terjadi kesalahan namun status sudah diubah menjadi Paid, maka billing harus dibatalakan dengan cara:</li>
+                        <li style="padding-top: 10px;">Buka menu Billing Pada Menu WMS</li>
+                        <img src="img/tambah/billingmenu.png" style="width: 40%; height: 20%; padding-top: 10px;">
+                        <li style="padding-top: 10px;">Setelah terbuka, pilih salah satu Container yang akan keluar berdasarkan nomor House BLnya</li>
+                        <img src="img/tambah/billingpilihhbl.png" style="width: 40%; height: 20%; padding-top: 10px;">
+                        <li style="padding-top: 10px;">Tap Gear diatas detail Billing House BL tersebut, lalu pilih Set To Cancel </li>
+                        <img src="img/tambah/billingsettocancel.png" style="width: 40%; height: 20%; padding-top: 10px;">
+                        <li style="padding-top: 10px;">Setelah dipilih Set To Cancel sistem akan memberikan sebuah konfirmasi ulang, untuk memastikan bahwa tidak terjadi Pembayaran </li>
+                        <img src="img/tambah/billingalertcancel.png" style="width: 40%; height: 20%; padding-top: 10px;">
+                        <li style="padding-top: 10px;">Apabila sudah berhasil maka akan muncul Notifikasi dibagian kanan bawah dan secara otomatis House BL yang sudah berubah status menjadi Cancel </li>
+                        <img src="img/tambah/billingnotificationcancel.png" style="width: 40%; height: 20%; padding-top: 10px;">
 
                     </ol>
                   </ul>
